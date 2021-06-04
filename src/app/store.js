@@ -1,8 +1,33 @@
-import { configureStore } from "@reduxjs/toolkit";
-import basketReducer from "../slices/basketSlice";
+import { createStore } from "redux";
+import { composeWithDevTools } from "redux-devtools-extension";
+import { basketReducer } from "../reducers/basketReducer";
+import rootReducer from "../reducers/root";
+function saveToLocalStorage(state) {
+  try {
+    const setItem = JSON.stringify(state.basket.cartItem);
+    localStorage.setItem("cart", setItem);
+  } catch (e) {
+    console.warn(e);
+  }
+}
+// function loadFromLocalStorage() {
+//     try {
+//       const getItem = localStorage.getItem("cart");
+//       if (getItem === null) return undefined;
+//       return JSON.parse(getItem);
+//     } catch (e) {
+//       console.warn(e);
+//       return undefined;
+//     }
+//   }
 
-export const store = configureStore({
-  reducer: {
-    basket: basketReducer,
-  },
-});
+// const initialState = {
+//     basket :{
+//         cartItem : window.localStorage.cart
+//     }
+// }
+
+const store = createStore(rootReducer,composeWithDevTools());
+store.subscribe(() => saveToLocalStorage(store.getState()));
+
+export default store;
