@@ -38,7 +38,7 @@ const Header = () => {
           />
           <SearchIcon className="h-11 p-4" />
         </div>
-        <div className="text-white flex items-center text-xs  space-x-6 mx-4 whitespace-nowrap ">
+        <div className="text-white flex items-center text-xs  space-x-3 lg:space-x-6 mx-4 whitespace-nowrap ">
           <div onClick={!session ? signIn : signOut} className="link">
             <p>{session ? ` hello ${session.user.name}` : "Signin"}</p>
             <p className="p">Acount & Lists</p>
@@ -65,7 +65,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center bg-amazon_blue-light space-x-3 p-2 pl-6 text-white text-sm">
+      <div className="flex items-center bg-amazon_blue-light space-x-3 p-2 pl-1 text-white text-sm whitespace-nowrap">
         <p className="flex items-center cursor-pointer" onClick={openSideNav}>
           <MenuIcon className="h-6 mr-1" />
           All
