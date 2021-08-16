@@ -2,7 +2,7 @@
 
 ### [Live Site](https://amazon-gamma.vercel.app/)
 
-![Amazon Clone ](https://im.ge/i/N6JJF)
+![Amazon Clone ](https://im.ge/i/screenbud-c3957a05-93c9-414d-acd4-1fb9df623102.N6JJF)
 
 ## Introduction
 This is a code repository for the Amazon clone 
