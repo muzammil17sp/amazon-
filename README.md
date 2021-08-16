@@ -12,7 +12,7 @@ In  this project the features are discussed below
 - Reactjs
 - Nextjs (Server side rendering)
 - Redux (State Management)
-- Google Authentication
+- NextAuth Authentication
 - Stripe Implementation 
 - Firebase firestore
 
