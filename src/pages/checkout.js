@@ -8,7 +8,7 @@ import Currency from "react-currency-formatter";
 import { useSession } from "next-auth/client";
 import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
-const stripePromice = loadStripe(process.env.stripe_public_key);
+const stripePromice = loadStripe("pk_test_51IwamyLORq85fxv2nZRZkZ4EI8PQtYQfaXEqmFI6MzjM8ySynYEZL9tsb6czlvzPWwWctExf8rTTR6uIDKyKGIeU00QLnSG2wk");
 const checkout = () => {
   const [session] = useSession();
   const { cartItem } = useSelector((state) => state.basket);

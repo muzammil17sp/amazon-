@@ -9,8 +9,8 @@ const app = !admin.apps.length
     })
   : admin.app();
 //   connection to stripe
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
-const endPointSecret = process.env.STRIPE_SIGNING_SECRET;
+const stripe = require("stripe")("sk_test_51IwamyLORq85fxv2VFZbckr0YqooUZaVfoNzpaN0cJCXI5fWE0elnf5QavKYslnwK0aBYHG9zK1t1mNoZBxmW01R00I7Jfm5do");
+const endPointSecret = "whsec_qyFFi9BKNqzmvpEZAQXSe4xqdFQs5kCL"
 const fulfilOrder = async (session) => {
   return app
     .firestore()
