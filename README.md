@@ -1,6 +1,24 @@
+# Amazon Clone 
+
+### [Live Site](https://amazon-gamma.vercel.app/)
+
+[![Amazon Clone](https://www.linkpicture.com/q/screenbud-c3957a05-93c9-414d-acd4-1fb9df623102.png)](https://www.linkpicture.com/view.php?img=LPic611aecbb61c401379062963)
+
+This is a code repository for the Amazon clone 
+
+In this project i created a amzaon clone using Nextjs , also using redux for state management ,Google Authentication and stripe implemention for payment options
+In  this project the features are discussed below
+
+- Reactjs
+- Nextjs (Server side rendering)
+- Redux (State Management)
+- NextAuth Authentication
+- Stripe Implementation 
+- Firebase firestore
+
+
+
 # Installation Steps
-
-
 
 ## Using npm
 
@@ -22,7 +40,3 @@ Run commands
 
 3) ```yarn run dev```
 
-
-### If you see the window below then you are set to build AMAZON 2.0!
-
-![Template Screenshot](TemplateScreenshot.jpg?raw=true "Template Screenshot")
